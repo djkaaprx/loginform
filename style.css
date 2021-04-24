@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    border: none;
+    color: black;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-image: url(bk.jpg);
+    background-size: cover;
+    background-position:center ;
+    z-index: 0;
+    background-color: black;
+}
+.overlay{
+    z-index: 1;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    opacity: 0.5;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.login{
+    z-index: 2;
+    background: white;
+    width: 500px;
+    min-height: 200px;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.45);
+}
+.login label{
+    width: 100%;
+}
+.login label span{
+width: 100%;
+float: left;
+padding-top: 15px;
+padding-bottom: 15px;
+color: #7f8c8d;
+
+}
+.login label input{
+width: calc(100% - 30px );
+border :1px solid #ecf0f1;
+padding: 15px;
+font-weight: 400;
+border-radius: 5px;
+color: #2c3e50;
+float: left;
+transition: border-bottom .35s ease-in-out;
+}
+.login label input:focus{
+    outline: none;
+    border-bottom: 1px solid orange;
+}
+.login  button{
+    width:calc(100%);
+    background: orange;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+    margin-top: 15px;
+}
+.login label a{
+    color: #3498db;
+    font-size: 15px;
+    float: right;
+    padding: 10px;
+}
+.login label a:hover{
+    text-decoration: underline;
+
+}
+@media only screen and (max-width: 600px) {
+    .login {
+        width: calc(100% - 60px);
+    }
+    
+  }
